@@ -67,7 +67,7 @@ window.Station = ({ stationProps, stationId }) => {
     };
 
     React.useEffect(() => {
-        const ws = new WebSocket('ws://localhost:5050/simulator' + stationId);
+        const ws = new WebSocket('ws://37.27.179.61:5050/simulator' + stationId);
         setSocket(ws);
 
         ws.onopen = () => {
