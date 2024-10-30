@@ -4,10 +4,10 @@ const CP = [
         user: 'TESTCP1',
         pass: 'TESTCP1',
         props: {
-            chargePointSerialNumber: 'CP1',
+            chargePointSerialNumber: 'EVS-4552',
             chargePointVendor: 'FutureCP',
             chargePointModel: 'm1',
-            chargeBoxSerialNumber: 'CP1BOX1',
+            chargeBoxSerialNumber: 'CP1BOX2',
             firmwareVersion: '1.0.0'
         },
         configurationKey: [
