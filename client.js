@@ -1,5 +1,5 @@
 var WebSocket = require('ws');
-const url = 'ws://localhost:9210/ocpp/1.6J/AAE00488 ';//CPG';
+const url = 'ws://37.27.179.61:9210/ocpp/1.6J/AAE00488 ';//CPG';
 
 
 	
