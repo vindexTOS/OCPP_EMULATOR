@@ -363,6 +363,7 @@ const callResulthandler = (
             console.log('Received MeterValues conf', JSON.stringify(conf));  
         },
         'StartTransaction': ({ idTagInfo, transactionId }) => {
+            console.log(StartTransaction)
             const isAccepted = idTagInfo.status === 'Accepted';
             if (isAccepted) {
                 setStates.setActiveTransaction({ ...pending, transactionId });

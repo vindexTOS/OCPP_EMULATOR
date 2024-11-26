@@ -57,7 +57,10 @@ window.Station = ({ stationProps, stationId }) => {
         const value = event.target.value.toLowerCase();
         const action = actionMap[value];
         const message = composeMessage(action, stationId);
-
+        console.log(message)
+        console.log(
+        "HERE"
+        )
         send(message);
     }
 
@@ -67,7 +70,8 @@ window.Station = ({ stationProps, stationId }) => {
     };
 
     React.useEffect(() => {
-        const ws = new WebSocket('ws://37.27.179.61:5050/simulator' + stationId);
+        // const ws = new WebSocket('ws://37.27.179.61:5050/simulator' + stationId);
+        const ws = new WebSocket('ws://localhost:5050/simulator' + stationId);
         setSocket(ws);
 
         ws.onopen = () => {
